@@ -13,7 +13,7 @@ import com.learn.crud.repository.ObjectRepository;
 public class EmployeeService {
 
 	@Autowired
-	@Qualifier("fake data")
+	@Qualifier("mongodb")
 	private ObjectRepository<Employee> employeeRepo;
 	
 	public List<Employee> getAllEmployees() {
